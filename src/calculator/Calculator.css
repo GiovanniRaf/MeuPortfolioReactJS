@@ -1,0 +1,61 @@
+.fundo{
+    color: black;
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 4px;
+}
+.button{
+    background-color: #555555;
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.buttonRed{
+    background-color: #ac1616;
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.grupo {
+    position: relative;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+#DivA{
+    position: absolute;
+    float: left;
+    right: 52%;
+    font-size: 20px;
+    font-style: italic;
+}
+#DivB{
+    position: absolute;
+    float: left;
+    left: 52%;
+    font-size: 20px;
+    font-style: italic;
+}
+#Result{
+    border: 1px solid black;
+    border-radius:7px;
+    background: #999;
+    width:450px;
+    margin: auto;
+    padding:10px;
+    text-align:center;
+}
