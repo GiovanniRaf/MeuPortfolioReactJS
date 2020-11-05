@@ -23,7 +23,7 @@ class About extends Component{
                         <li>Windows e Linux Ubuntu;</li>
                         <li>IntelliJ (Java) - Nível intermediário;</li>
                         <li>VSCode (C, PHP, Javascript) - Nível iniciante/intermediário.</li>
-                    
+                        
                         <br/>
                         <p>Estudando:</p>
                         <li>Github;</li>

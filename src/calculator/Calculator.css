@@ -10,7 +10,7 @@
     -moz-osx-font-smoothing: grayscale;
     border-radius: 4px;
 }
-.button{
+.buttonCalc{
     background-color: #555555;
     border: black;
     color: white;
@@ -18,7 +18,8 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
+    font: bold;
 }
 .buttonRed{
     background-color: #ac1616;
@@ -30,7 +31,12 @@
     display: inline-block;
     font-size: 20px;
 }
-
+.inputCalc{
+    width: 100%;
+    padding: 8px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
 .grupo {
     position: relative;
     width: 100%;

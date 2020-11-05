@@ -25,21 +25,21 @@ class Calculator extends Component {
                 <div id="DivA">
                     Valor 1:
                     <br/>
-                    <input type="number" value={valorAInput} onChange={this.handleValorAFieldChange} />
+                    <input className="inputCalc" type="number" value={valorAInput} onChange={this.handleValorAFieldChange} />
                 </div>
                 <div id="DivB">
                     Valor 2:
                     <br/>
-                    <input type="number" value={valorBInput} onChange={this.handleValorBFieldChange} />
+                    <input className="inputCalc" type="number" value={valorBInput} onChange={this.handleValorBFieldChange} />
                 </div>
                 </div>
                 
                 <br/><br/><br/><br/>
                 
-                <button className="button" value="+" onClick={this.handleButtonClick}>+</button>
-                <button className="button" value="-" onClick={this.handleButtonClick}>-</button>
-                <button className="button" value="*" onClick={this.handleButtonClick}>*</button>
-                <button className="button" value="/" onClick={this.handleButtonClick}>/</button>
+                <button className="buttonCalc" value="+" onClick={this.handleButtonClick}>+</button>
+                <button className="buttonCalc" value="-" onClick={this.handleButtonClick}>-</button>
+                <button className="buttonCalc" value="*" onClick={this.handleButtonClick}>*</button>
+                <button className="buttonCalc" value="/" onClick={this.handleButtonClick}>/</button>
                 <button className="buttonRed" value="C" onClick={this.handleButtonClick}>C</button>
 
                 <br/><br/>

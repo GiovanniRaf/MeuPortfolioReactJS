@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Calculator from "./calculator/Calculator";
 import Counter from "./pages/Counter";
 import About from "./pages/About";
+import Todo from "./todolist/Todo";
 
 import {Route, BrowserRouter as Router, Switch, Link} from "react-router-dom";
 
@@ -29,7 +30,7 @@ const App = (props) => {
             <Switch>
               <Route path="/" exact component={Home}/>
               <Route path="/calculator" component={Calculator}/>
-              <Route path="/todolist" component={Home}/>
+              <Route path="/todolist" component={Todo}/>
               <Route path="/counter" component={Counter}/>
               <Route path="/about" component={About}/>
             </Switch>

@@ -1,43 +1,41 @@
-import React from "react";
-import shortid from 'shortid';
+import React, { Component } from 'react';
+import './TodoForm.css';
 
-export default class TodoForm extends React.Component{
-
-    state = {
-        text: " "
+export default class TodoForm extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: "",
+        };
     }
 
-    handleChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
+    handleInputChange = (e) => {
+        const input = e.target.value;
+        this.setState({ input });
     };
 
-    handleSubmit = (event) => {
-        event.preventDefault();
-        this.props.onSubmit({
-            id: shortid.generate(),
-            text: this.state.text,
-            complete: false
-        });
-        this.setState({
-            text: ""
-        });
+    handleAdd = () => {
+        const input = this.state.input;
+
+        if (!input) {
+            return;
+        }
+
+        this.props.addFunction(input);
+        this.setState({ input: "" });
+    };
+
+    handleKeyUp = (e) => {
+        if (e.key === "Enter") {
+            this.handleAdd();
+        }
     };
 
     render() {
         return (
-            <div>   
-                <h2>Incluir Tarefa</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <input 
-                        name="text"
-                        value={this.state.text} 
-                        onChange={this.handleChange} 
-                        placeholder="Tarefa"
-                    />
-                    <button onClick={this.handleSubmit}>Add</button>
-                </form>
+            <div className="todo-form">
+                <input placeholder="New task" onChange={this.handleInputChange} value={this.state.input} type="text" onKeyUp={this.handleKeyUp} />
+                <button onClick={this.handleAdd} variant="contained" color="primary">Add</button >
             </div>
         );
     }
