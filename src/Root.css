@@ -6,7 +6,7 @@ body{
 }
 button{
     border-radius: 4px;
-    background-color: #fcba03;
+    background-color: #78909C;
     border: none;
     color: black;
     padding: 15px 32px;
@@ -59,7 +59,7 @@ button:hover span:after {
     padding: 5px;
     border: 1px solid white;
     border-radius: 5pt;
-    background: #706649;
+    background: #455A64;
     width: min-content;
 }
 .Direita{
@@ -83,5 +83,5 @@ header, footer {
     min-height: 100px;
     border: 1px solid #000000;
     border-radius: 5pt;
-    background: #fcba03;
+    background: #78909C;
 }
