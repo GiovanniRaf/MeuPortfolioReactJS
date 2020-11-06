@@ -18,7 +18,7 @@ export default props => {
                         <span className={todoItem.complete && props.todoToShow !== "Completed" ? "complete" : ""} onClick={() => props.completeFunction(todoItem)}>{todoItem.text}</span>
                     </div>
                     <div>
-                        <button variant="contained" color="secondary" onClick={() => props.deleteFunction(todoItem)}>Delete</button>
+                        <button variant="contained" color="secondary" onClick={() => props.deleteFunction(todoItem)}>Deletar</button>
                     </div>
                 </div>
             ))}

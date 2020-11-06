@@ -34,8 +34,8 @@ export default class TodoForm extends Component {
     render() {
         return (
             <div className="todo-form">
-                <input placeholder="New task" onChange={this.handleInputChange} value={this.state.input} type="text" onKeyUp={this.handleKeyUp} />
-                <button onClick={this.handleAdd} variant="contained" color="primary">Add</button >
+                <input placeholder="Nova task" onChange={this.handleInputChange} value={this.state.input} type="text" onKeyUp={this.handleKeyUp} />
+                <button onClick={this.handleAdd} variant="contained" color="primary">Adicionar</button >
             </div>
         );
     }

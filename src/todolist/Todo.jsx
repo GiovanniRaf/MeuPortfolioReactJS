@@ -11,7 +11,7 @@ export default class Todo extends Component {
                 todoToShow: "All",
                 currentId: 0,
         };
-  }
+    }
 
     incrementId = () => {
         const currentId = this.state.currentId;
@@ -54,15 +54,15 @@ export default class Todo extends Component {
         return (
             <div key="unico" className="todo-container">
                 <div className="todo-title">
-                    <h1>Todo List</h1>
+                    <h1>Lista de tarefas</h1>
                 </div>
 
                 <TodoForm addFunction={this.handleAddTodo} />
 
                 <div className="todo-toggle">
-                    <button color={this.state.todoToShow === "All" ? "primary" : ""} variant="contained" onClick={this.handleTodoToShow}>All</button>
-                    <button color={this.state.todoToShow === "Completed" ? "primary" : ""} variant="contained" onClick={this.handleTodoToShow}>Completed</button>
-                    <button color={this.state.todoToShow === "Remaining" ? "primary" : ""} variant="contained" onClick={this.handleTodoToShow}>Remaining</button>
+                    <button color={this.state.todoToShow === "All" ? "primary" : ""} variant="contained" onClick={this.handleTodoToShow}>Todas</button>
+                    <button color={this.state.todoToShow === "Completed" ? "primary" : ""} variant="contained" onClick={this.handleTodoToShow}>Completas</button>
+                    <button color={this.state.todoToShow === "Remaining" ? "primary" : ""} variant="contained" onClick={this.handleTodoToShow}>Restantes</button>
                 </div>
 
                 <TodoTasks todoToShow={this.state.todoToShow} completeFunction={this.handleComplete} deleteFunction={this.handleDelete} list={this.state.todo} />
